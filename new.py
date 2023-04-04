@@ -63,7 +63,9 @@ def new_authentication(mis,password):
     return True
 #    st.write(x.text)
 
-option = st.radio("", ["FY", "SY_UG","SY_PG","TY_UG","TY_PG","Final_UG"],horizontal=True)
+st.title("COEP Gathering'23 Entry Pass")
+st.markdown("Find your gathering pass here")
+option = st.radio("Select your year", ["FY", "SY_UG","SY_PG","TY_UG","TY_PG","Final_UG"],horizontal=True)
 id_input = st.text_input("Enter MIS")
 password_input = st.text_input("Enter moodle Password")
 
