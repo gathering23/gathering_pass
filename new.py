@@ -69,7 +69,7 @@ option = st.radio("Select your year", ["FY", "SY_UG","SY_PG","TY_UG","TY_PG","Fi
 id_input = st.text_input("Enter MIS")
 password_input = st.text_input("Enter moodle Password")
 
-if id_input and password_input:
+if st.button("Submit"):
     if new_authentication(id_input, password_input):
         # Get the image data from local file
         try:
